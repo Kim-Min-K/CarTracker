@@ -12,6 +12,9 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+/**
+ * Creates the onView and sets the map fragment
+ */
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     @Override
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
+
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
